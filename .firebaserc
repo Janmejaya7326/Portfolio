@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "iamjanmejayakhandual",
+    "build": "iamjanmejayakhandual"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}

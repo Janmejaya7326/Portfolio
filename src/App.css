@@ -36,3 +36,71 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes blink {
+  0% { opacity: 0.2; }
+  50% { opacity: 1; }
+  100% { opacity: 0.2; }
+}
+
+.blink-animation {
+  animation: blink 7s infinite; 
+}
+
+.underline-short::after {
+  content: "";
+  display: block;
+  width: 50%; /* Adjust this percentage to make the underline longer or shorter */
+  height: 3px; /* Adjust the height to make the underline thicker or thinner */
+  background-color: currentColor;
+  margin: 0 auto; /* Center the underline */
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10px; /* Adjust this value to control the distance from the text */
+}
+
+@keyframes upDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.marquee {
+  animation: upDown 1s infinite;
+}
+
+
+@keyframes floatInFromMiddle {
+  from {
+    transform: translateX(50vw); /* Start from the middle */
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.icon-animation {
+  animation: floatInFromMiddle 1s ease-out forwards;
+}
+
+.icon-animation-delay-200 {
+  animation-delay: 0.2s;
+}
+
+.icon-animation-delay-400 {
+  animation-delay: 0.4s;
+}
+
+.icon-animation-delay-600 {
+  animation-delay: 0.6s;
+}
+
+.icon-animation-delay-800 {
+  animation-delay: 0.8s;
+}
